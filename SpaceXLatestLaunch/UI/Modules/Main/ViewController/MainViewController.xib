@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="SpaceXLatestLaunch" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="EUF-BN-l2x" id="QyD-Ur-y0p"/>
+                <outlet property="scrollView" destination="QvF-yb-OoM" id="6yR-cI-Fz6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="xInfoView" destination="umC-xQ-rlC" id="XCf-Pk-hOh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QvF-yb-OoM">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pf-sY-Pao" userLabel="mContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EUF-BN-l2x" userLabel="headerView" customClass="MVHeaderView" customModule="SpaceXLatestLaunch" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="umC-xQ-rlC" customClass="MVXInfoView" customModule="SpaceXLatestLaunch" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="414" width="414" height="61"/>
+                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="61" id="c1f-Uv-4uQ"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="SpaceXBrandColor"/>
+                            <constraints>
+                                <constraint firstItem="umC-xQ-rlC" firstAttribute="leading" secondItem="9pf-sY-Pao" secondAttribute="leading" id="1qy-98-beE"/>
+                                <constraint firstItem="EUF-BN-l2x" firstAttribute="leading" secondItem="9pf-sY-Pao" secondAttribute="leading" id="BjF-eO-RjT"/>
+                                <constraint firstItem="EUF-BN-l2x" firstAttribute="top" secondItem="9pf-sY-Pao" secondAttribute="top" id="FFz-on-B3A"/>
+                                <constraint firstItem="EUF-BN-l2x" firstAttribute="height" secondItem="9pf-sY-Pao" secondAttribute="width" id="kKh-ZW-0dF"/>
+                                <constraint firstAttribute="trailing" secondItem="umC-xQ-rlC" secondAttribute="trailing" id="tI4-Ih-inq"/>
+                                <constraint firstAttribute="trailing" secondItem="EUF-BN-l2x" secondAttribute="trailing" id="uxL-gh-5yR"/>
+                                <constraint firstItem="umC-xQ-rlC" firstAttribute="top" secondItem="EUF-BN-l2x" secondAttribute="bottom" id="zLP-c0-Y3J"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="9pf-sY-Pao" secondAttribute="bottom" id="BBC-6f-TpK"/>
+                        <constraint firstItem="9pf-sY-Pao" firstAttribute="leading" secondItem="QvF-yb-OoM" secondAttribute="leading" id="IKD-rs-im5"/>
+                        <constraint firstItem="9pf-sY-Pao" firstAttribute="top" secondItem="QvF-yb-OoM" secondAttribute="top" id="Kav-VG-9py"/>
+                        <constraint firstAttribute="trailing" secondItem="9pf-sY-Pao" secondAttribute="trailing" id="f2v-iA-cgq"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9pf-sY-Pao" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="U7J-QG-3zw"/>
+                <constraint firstItem="QvF-yb-OoM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aJp-IL-jBX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QvF-yb-OoM" secondAttribute="trailing" id="jWj-bF-WJr"/>
+                <constraint firstItem="9pf-sY-Pao" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" priority="250" id="wDD-1X-72f"/>
+                <constraint firstAttribute="bottom" secondItem="QvF-yb-OoM" secondAttribute="bottom" id="yU6-fY-dRP"/>
+                <constraint firstItem="QvF-yb-OoM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zFl-tp-rw7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="144"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="SpaceXBrandColor">
+            <color red="0.129071027" green="0.31754493709999998" blue="0.51549535989999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

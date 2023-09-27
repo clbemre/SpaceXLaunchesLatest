@@ -1,0 +1,10 @@
+{
+    "str_splash_header" : "SpaceX",
+    "str_un_expected_error" : "An unexpected error occurred!",
+    "str_success" : "Success",
+    "str_warning" : "Warning",
+    "str_error" : "Error",
+    "str_ok" : "OK",
+    "str_check_network_connection" : "Please check your internet connection.",
+    "str_flight_number" : "Flight Number: %"
+}

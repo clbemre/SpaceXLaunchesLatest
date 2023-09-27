@@ -1,0 +1,10 @@
+{
+    "str_splash_header" : "SpaceX",
+    "str_un_expected_error" : "Beklenmeyen bir hata oluştu!",
+    "str_success" : "Başarılı",
+    "str_warning" : "Uyarı",
+    "str_error" : "Hata",
+    "str_ok" : "Tamam",
+    "str_check_network_connection" : "Lütfen internet bağlantınızı kontrol ediniz.",
+    "str_flight_number" : "Uçuş numarası: %"
+}

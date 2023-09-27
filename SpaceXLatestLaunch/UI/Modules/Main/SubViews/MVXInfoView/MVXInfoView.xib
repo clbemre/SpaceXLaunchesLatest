@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="JetBrainsMono-Medium.ttf">
+            <string>JetBrainsMono-Medium</string>
+        </array>
+        <array key="JetBrainsMono-Regular.ttf">
+            <string>JetBrainsMono-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MVXInfoView">
+            <connections>
+                <outlet property="labelFlightNumber" destination="rWQ-GH-AMN" id="v5c-Xi-DNI"/>
+                <outlet property="labelName" destination="ZrB-yH-Sft" id="z2o-YQ-hYh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrB-yH-Sft">
+                    <rect key="frame" x="20" y="37" width="358" height="22"/>
+                    <fontDescription key="fontDescription" name="JetBrainsMono-Medium" family="JetBrains Mono" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWQ-GH-AMN">
+                    <rect key="frame" x="398" y="40" width="8" height="16"/>
+                    <fontDescription key="fontDescription" name="JetBrainsMono-Regular" family="JetBrains Mono" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="SpaceXBrandColor"/>
+            <constraints>
+                <constraint firstItem="rWQ-GH-AMN" firstAttribute="leading" secondItem="ZrB-yH-Sft" secondAttribute="trailing" constant="20" id="4Iv-kq-SmA"/>
+                <constraint firstItem="rWQ-GH-AMN" firstAttribute="centerY" secondItem="ZrB-yH-Sft" secondAttribute="centerY" id="IbY-vo-MvD"/>
+                <constraint firstItem="ZrB-yH-Sft" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Ndu-07-5EE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rWQ-GH-AMN" secondAttribute="trailing" constant="8" id="X8e-1J-q1J"/>
+                <constraint firstItem="ZrB-yH-Sft" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="swq-IU-LOM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-123.88392857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="SpaceXBrandColor">
+            <color red="0.129071027" green="0.31754493709999998" blue="0.51549535989999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
